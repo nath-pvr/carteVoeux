@@ -1,0 +1,54 @@
+.explosion1 g{
+    animation: fill 1s ease forwards 3s;
+}
+
+.star g{
+    animation: fill 0.8s ease forwards 2s;
+}
+
+.explosion2 g{
+    animation: fill 3s ease forwards 1s;
+}
+
+
+@keyframes fill {
+    from {
+        fill: transparent;
+    }
+
+    to {
+        fill:#A89331;
+    }
+}
+
+#fusée{
+    position: absolute;
+    bottom: 5%;
+    left: 38%;
+}
+
+#explosion1{
+    position: absolute;
+    right: 25%;
+    top: 15%;
+}
+
+#explosion2{
+    position: absolute;
+    left: 25%;
+    top: 15%;
+}
+
+#star{
+    position: absolute;
+    right: 40%;
+    top: 25%;
+}
+
+/* #star2{
+    position: absolute;
+    left: 40%;
+    top: 25%;
+} */
+
+

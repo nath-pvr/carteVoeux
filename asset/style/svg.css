@@ -1,15 +1,19 @@
-.explosion1 g{
-    animation: fill 1s ease forwards 3s;
-}
+/* animation Feux d'artifices */
 
-.star g{
-    animation: fill 0.8s ease forwards 2s;
+.explosion1 g{
+    animation: fill 3s ease infinite 5s;
 }
 
 .explosion2 g{
-    animation: fill 3s ease forwards 1s;
+    animation: fill 3s ease infinite 4s;
 }
 
+.star g{
+    animation: fill 2s ease infinite 3s;
+}
+.star2 g{
+    animation: fill 2s ease infinite 2s;
+}
 
 @keyframes fill {
     from {
@@ -21,34 +25,59 @@
     }
 }
 
-#fusée{
-    position: absolute;
-    bottom: 5%;
-    left: 38%;
+
+/* positionnement Feux d'artifices */
+
+.FA{
+    padding-top: 10%;
 }
 
 #explosion1{
-    position: absolute;
-    right: 25%;
-    top: 15%;
-}
-
-#explosion2{
-    position: absolute;
-    left: 25%;
-    top: 15%;
+    margin-left: 5%;
+    padding-left: 5%;
 }
 
 #star{
-    position: absolute;
-    right: 40%;
-    top: 25%;
+    margin-top: 8%;
+    z-index: 10;
+    
+}
+#star2{
+    margin-top: 8%;
+    z-index: 10;
+    padding-left: 10%;
 }
 
-/* #star2{
-    position: absolute;
-    left: 40%;
-    top: 25%;
-} */
+/* animation fusee */
+.fusee{
+    animation: fusee 2s ease forwards 3s;
+}
 
+.fusee g{
+    animation: fill 3s ease forwards 3s ;
+}
+
+@keyframes fusee{
+    0%{
+        fill: transparent;
+        bottom: 0;
+    }
+
+    100%{
+        fill: transparent;
+        bottom: 50%;
+    }
+}
+
+
+/* positionnement fusee */
+#fusee_container{
+    height: 50%;
+    width: 100%;
+}
+
+.fusee{
+    position: absolute;
+    bottom: 0;
+}
 

@@ -1,52 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
-body{
+
+body {
     margin: 0;
+    background-color: #1a0b02;
 }
 
-html{
+html {
     font-size: .625em;
     font-size: calc(1em*.625);
 }
 
-.bg{
-    position: relative;
+.bg {
     width: 100%;
-    height:100vh;
-    background-image:url('../img/fond_carteVoeuxCadre.jpg') ;
+    height: 100vh;
+    background-image: url('../img/fond_carteVoeuxCadre.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
 }
 
-
-h1{
-    font-size: 10rem;
-    z-index: 9;
-}
-
-h2{
+#VS {
     font-size: 6rem;
-    z-index: 9;
 }
 
-h3{
-    font-size: 4rem;
-    z-index: 9;
+#JF {
+    margin-top: -3%;
+    font-size: 10rem;
 }
 
-#de{
-   transform: translate(50%, -170%);
-}
-
-#JF{
-    transform: translate(-15%,-120%);
-}
-
-.title{
-    position: absolute;
-    top: 25%;
-    left: 40%;
+.title {
+    margin-top: -8%;
+    padding-left: 30%;
     color: #C7CBCE;
     font-family: 'Clicker Script', cursive;
+    z-index: 9;
 }
-

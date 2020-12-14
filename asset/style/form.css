@@ -1,0 +1,48 @@
+.svg{
+    margin-top: 2%;
+    stroke-dasharray: 1350px;
+    stroke-dashoffset: 1350px;
+    animation: anim 3s ease forwards;
+}
+
+@keyframes anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+h1{
+    color: #C7CBCE;
+    font-size: 8rem;
+    font-family: 'Clicker Script', cursive;
+    text-decoration: underline #b9a64d;
+}
+
+.formperso{
+    margin: 2%;
+}
+
+.btnpers{
+    color:#b9a64d ;
+    border-color: #b9a64d ;
+    font-size: 3rem;
+}
+
+p{
+    color: #C7CBCE;
+    font-family: 'Clicker Script', cursive;
+    font-size: 3rem;
+}
+
+.label{
+    margin-left: 1%;
+    color: #C7CBCE;
+    font-family: 'Clicker Script', cursive;
+    font-size: 2rem;
+}
+
+.transparent{
+    background-color: transparent;
+    border-color: #b9a64d;
+}
+

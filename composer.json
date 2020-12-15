@@ -1,0 +1,12 @@
+{
+    "name": "vendor/nath-pvr",
+    "authors": [
+        {
+            "name": "nath-pvr",
+            "email": "nathalie.pouvrasseau.t@gmail.com"
+        }
+    ],
+    "require": {
+        "swiftmailer/swiftmailer": "^5.4"
+    }
+}

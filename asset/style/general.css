@@ -6,8 +6,8 @@ body {
 }
 
 html {
-    font-size: .625em;
-    font-size: calc(1em*.625);
+    font-size: .625em!important;
+    font-size: calc(1em*.625)!important;
 }
 
 
@@ -22,7 +22,7 @@ html {
 }
 
 .bg p{
-    margin-top: -3.5%;
+    padding-top: 25%;
     font-weight: bold;
     font-size: 4rem;
     color: #b9a64d;
@@ -46,3 +46,44 @@ html {
     z-index: 10;
 }
 
+@media screen and (max-width:800px) {
+
+    #JF{
+        font-size: 6rem;
+    }
+
+    .VS{
+        font-size: 4rem;
+    }
+
+    .bg p{
+        padding-top: 80%;
+        font-size: 2.5rem;
+    }
+
+    .bg{
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    #JF{
+        font-size: 4rem;
+    }
+
+    .VS{
+        font-size: 3rem;
+    }
+
+    .bg p{
+        padding-top: 50%;
+        font-size: 2rem;
+    }
+
+    .bg{
+        background-size: cover;
+        height: 180%;
+        background-position: center;
+    }
+}

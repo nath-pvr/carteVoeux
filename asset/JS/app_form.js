@@ -1,10 +1,17 @@
-const form = document.getElementById("form");
-console.log(form);
+let input = document.querySelectorAll('input');
+let label = document.querySelectorAll('label');
 
-form.addEventListener('focusin', (e) =>{
-    e.target.style.backgroud = '#1a0b02;';
+let togleLabel = function togleLabel(e) {
+    label.forEach(e => {
+        e.classList.remove('label');
+        e.innerHTML = "";
+    })
+
+
+}
+
+
+input.forEach(e => {
+    console.log(e);
+    e.addEventListener('focusin', togleLabel)
 });
-
-form.addEventListener('focusout', (e)=> {
-    e.target.style.background = '';
-}); 

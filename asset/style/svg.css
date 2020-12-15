@@ -1,55 +1,55 @@
 /* animation Feux d'artifices */
 
-.explosion1 g{
+.explosion1 g {
     animation: fill 3s ease forwards 5s;
 }
 
-#fusee1{
-    animation: fusee 3s ease backwards 2s; 
+#fusee1 {
+    animation: fusee 3s ease backwards 2s;
 }
 
-.fusee1{
-    animation: fill 3s ease backwards 2s ;
+.fusee1 {
+    animation: fill 3s ease backwards 2s;
 }
 
 
-.explosion2 g{
+.explosion2 g {
     animation: fill 3s ease forwards 6s;
 }
 
-#fusee4{
+#fusee4 {
     animation: fusee 3s ease backwards 3s;
 }
 
-.fusee4{
-    animation: fill 3s ease backwards 3s ;
+.fusee4 {
+    animation: fill 3s ease backwards 3s;
 }
 
 
 
-.star g{
+.star g {
     animation: fill 2s ease forwards 7s;
 }
 
-#fusee2{
+#fusee2 {
     animation: fusee 3s ease backwards 4s;
 }
 
-.fusee2{
-    animation: fill 3s ease backwards 4s ;
+.fusee2 {
+    animation: fill 3s ease backwards 4s;
 }
 
 
-.star2 g{
+.star2 g {
     animation: fill 2s ease forwards 8s;
 }
 
-#fusee3{
+#fusee3 {
     animation: fusee 2s ease backwards 6s;
-} 
+}
 
-.fusee3{
-    animation: fill 2s ease backwards 6s ;
+.fusee3 {
+    animation: fill 2s ease backwards 6s;
 }
 
 
@@ -59,38 +59,39 @@
     }
 
     to {
-        fill:#A89331;
+        fill: #A89331;
     }
 }
 
 
 
-@keyframes fusee{
-    from{
-        
-        
-    }to{
-       transform: translateY(-450%);
+@keyframes fusee {
+    from {}
+
+    to {
+        transform: translateY(-750%);
     }
 }
 
 /* positionnement Feux d'artifices */
 
-.FA{
-    padding-top: 4%;
+.FA {
+    padding-top: 2%;
 }
 
-#explosion1{
+
+#explosion1 {
     margin-left: 5%;
     padding-left: 5%;
 }
 
-#star{
+#star {
     margin-top: 8%;
     z-index: 10;
-    
+
 }
-#star2{
+
+#star2 {
     margin-top: 8%;
     z-index: 10;
     padding-left: 10%;
@@ -98,13 +99,27 @@
 
 
 /* positionnement fusee */
-#fusee_container{
+#fusee_container {
     height: 50%;
     width: 100%;
 }
 
-.fusee{
+.fusee {
     z-index: 0;
 }
 
+@media screen and (max-width:800px) {
+    .FA {
+        padding-top: 10%;
+    }
+}
 
+@media screen and (max-width:400px) {
+    @keyframes fusee {
+        from {}
+
+        to {
+            transform: translateY(-350%);
+        }
+    }
+}

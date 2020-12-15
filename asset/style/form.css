@@ -42,7 +42,10 @@ p{
 }
 
 .transparent{
-    background-color: transparent;
-    border-color: #b9a64d;
+    font-family: 'Clicker Script', cursive;
+    font-size: 3rem;
+    background-color: transparent!important;
+    border-color: #b9a64d!important;
 }
+
 
